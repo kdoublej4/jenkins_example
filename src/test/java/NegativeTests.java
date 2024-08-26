@@ -3,11 +3,12 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import tests.TestBase;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Tag("Simple")
-public class NegativeTests extends BaseTest {
+public class NegativeTests extends TestBase {
 
     @Test
     void test1() {
