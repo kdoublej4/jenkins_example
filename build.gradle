@@ -12,9 +12,9 @@ repositories {
 
 dependencies {
     testImplementation (
-            "com.codeborne:selenide:7.4.2",
-            "org.junit.jupiter:junit-jupiter:5.10.3",
-            "org.slf4j:slf4j-simple:2.0.15",
+            'com.codeborne:selenide:7.4.2',
+            'org.junit.jupiter:junit-jupiter:5.10.3',
+            'org.slf4j:slf4j-simple:2.0.15',
             'com.github.javafaker:javafaker:1.0.2',
             'io.qameta.allure:allure-selenide:2.29.0'
     )
@@ -26,6 +26,6 @@ test {
 
 task simple_test(type: Test) {
     useJUnitPlatform {
-        includeTags("Simple")
+        includeTags("simple")
     }
 }
