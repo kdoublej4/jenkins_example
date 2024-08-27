@@ -19,6 +19,7 @@ public class TestBase {
         Configuration.browserSize = "1920x1080";
         Configuration.headless = true;
         Configuration.holdBrowserOpen = false;
+//        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         SelenideLogger.addListener("allure", new AllureSelenide());
     }
 }
