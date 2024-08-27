@@ -6,6 +6,8 @@ import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
 import com.codeborne.selenide.commands.TakeScreenshot;
 import io.qameta.allure.Attachment;
+import io.qameta.allure.Step;
+import io.qameta.allure.Story;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import pages.components.CalendarComponent;
@@ -46,14 +48,18 @@ public class RegistrationPage {
         return this;
     }
 
+    @Step("Input firstname")
     public RegistrationPage setFirstName(String firstName) {
         firstNameInput.setValue(firstName);
         return this;
     }
+
+    @Step("Input lastname")
     public RegistrationPage setLastName(String lastName) {
         lastNameInput.setValue(lastName);
         return this;
     }
+    @Step("Input email")
     public RegistrationPage setEmail(String email) {
         emailInput.setValue(email);
         return this;
@@ -62,52 +68,52 @@ public class RegistrationPage {
         genderOptions.findBy(text(gender)).click();
         return this;
     }
-
+    @Step("Input phone number")
     public RegistrationPage setNumber(String number) {
         numberInput.setValue(number);
         return this;
     }
-
+    @Step("Input birth date")
     public RegistrationPage setBirthDate(String day, String month, String year) {
         dateOfBirth.click();
         calendarComponent.setDate(day, month, year);
         return this;
     }
-
+    @Step("Set subject")
     public RegistrationPage setSubjects(String subject) {
         setSubject.setValue(subject).pressEnter();
         return this;
     }
-
+    @Step("Set hobby")
     public RegistrationPage setHobbies(String hobbie) {
         hobbiesOptions.findBy(text(hobbie)).click();
         return this;
     }
-
+    @Step("Upload picture")
     public RegistrationPage uploadPicture(String path) {
         setPicture.uploadFromClasspath(path);
         return this;
     }
-
+    @Step("Input current address")
     public RegistrationPage setCurrentAddress(String address) {
         currentAddress.setValue(address);
         return this;
     }
-
+    @Step("Set state")
     public RegistrationPage setState() {
         state.click();
         ElementsCollection states = $$x("//div[@class=' css-11unzgr']/div");
         states.get(new Random().nextInt(states.size())).click();
         return this;
     }
-
+    @Step("Set city")
     public RegistrationPage setCity() {
         city.click();
         ElementsCollection cities = $$x("//div[@class=' css-11unzgr']/div");
         cities.get(new Random().nextInt(cities.size())).click();
         return this;
     }
-
+    @Step("Press submit button")
     public RegistrationPage pressSubmit() {
         submitBth.click();
         return this;
