@@ -39,7 +39,7 @@ public class RegistrationPage {
             submitBth = $x("//button[@id='submit']");
 
 
-
+    @Step("Open page")
     public RegistrationPage openPage() {
         open("/automation-practice-form");
         $x("//h1[@class='text-center']/following-sibling::*").shouldHave(text(TITLE_TEXT));
@@ -64,6 +64,7 @@ public class RegistrationPage {
         emailInput.setValue(email);
         return this;
     }
+    @Step("Set gender")
     public RegistrationPage setGender(String gender) {
         genderOptions.findBy(text(gender)).click();
         return this;
@@ -118,12 +119,12 @@ public class RegistrationPage {
         submitBth.click();
         return this;
     }
-
+    @Step("Verify modal appears")
     public RegistrationPage verifyResultsModalAppears() {
         registrationResultsModal.verifyModalAppears();
         return this;
     }
-
+    @Step("Verify input data")
     public RegistrationPage verifyResult(String key, String value) {
         registrationResultsModal.verifyResult(key, value);
         return this;
