@@ -32,8 +32,8 @@ public class RegistrationTest extends TestBase {
                 .setCurrentAddress(currentAddress)
                 .setState()
                 .setCity()
-                .pressSubmit()
-                .takeScreenshot();
+                .pressSubmit();
+//                .takeScreenshot();
 
         formPage.verifyResultsModalAppears()
                 .verifyResult("Student Name", firstName + " " + lastName)

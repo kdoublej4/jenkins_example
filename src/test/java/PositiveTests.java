@@ -8,7 +8,7 @@ import tests.TestBase;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@Tag("simple")
+@Tag("simple") // <=======
 public class PositiveTests extends TestBase {
 
     @Test
@@ -16,7 +16,7 @@ public class PositiveTests extends TestBase {
         SelenideLogger.addListener("allure", new AllureSelenide());
         assertTrue(true);
     }
-
+    @Tag("simple") // <========
     @Test
     void test2() {
         assertTrue(true);
@@ -37,3 +37,4 @@ public class PositiveTests extends TestBase {
         assertTrue(true);
     }
 }
+
