@@ -24,8 +24,8 @@ test {
     useJUnitPlatform()
 }
 
-//task simple_test(type: Test) {
-//    useJUnitPlatform {
-//        includeTags("simple")
-//    }
-//}
+task simple_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("simple")
+    }
+}
