@@ -30,4 +30,11 @@ task simple_test(type: Test) {
     }
 }
 
+task one_property_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("one_property")
+    }
+}
+
+
 
