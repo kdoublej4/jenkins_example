@@ -9,7 +9,7 @@ import tests.TestBase;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Tag("simple")
-public class SkippedTests extends TestBase {
+public class SkippedTests {
 
     @Test
     @Disabled
