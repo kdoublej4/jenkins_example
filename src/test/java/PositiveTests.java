@@ -9,7 +9,7 @@ import tests.TestBase;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Tag("simple") // <=======
-public class PositiveTests extends TestBase {
+public class PositiveTests {
 
     @Test
     void test1() {
