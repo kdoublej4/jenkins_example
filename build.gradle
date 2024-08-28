@@ -55,12 +55,6 @@ tasks.withType(Test) {
     }
 }
 
-tasks.register('one_property_test', Test) {
-    useJUnitPlatform {
-        includeTags("one_property")
-    }
-}
-
 tasks.register('positive_test', Test) {
     useJUnitPlatform {includeTags("positive")
     }
