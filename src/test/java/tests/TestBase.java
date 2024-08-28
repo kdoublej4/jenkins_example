@@ -23,8 +23,8 @@ public class TestBase {
 
     @BeforeAll
     public static void setUp() {
+        Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browser = "chrome";
         Configuration.browserSize = "1920x1080";
         Configuration.headless = true;
 
