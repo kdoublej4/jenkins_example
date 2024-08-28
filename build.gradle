@@ -42,12 +42,10 @@ dependencies {
 
 tasks.withType(Test) {
     useJUnitPlatform()
-    systemProperties(System.getProperties())
 
     def browser = System.getProperty("browser", "chrome")
     println "Using browser: $browser"
     systemProperty "browser", browser
-
 
     testLogging {
         lifecycle {
