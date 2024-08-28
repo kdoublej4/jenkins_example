@@ -7,7 +7,7 @@ import tests.TestBase;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@Tag("simple")
+@Tag("negative")
 public class NegativeTests {
 
     @Test

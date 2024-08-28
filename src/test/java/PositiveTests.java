@@ -8,7 +8,7 @@ import tests.TestBase;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@Tag("simple") // <=======
+@Tag("positive") 
 public class PositiveTests {
 
     @Test
