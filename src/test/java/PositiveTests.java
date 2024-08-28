@@ -13,7 +13,6 @@ public class PositiveTests extends TestBase {
 
     @Test
     void test1() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
         assertTrue(true);
     }
     @Tag("simple") // <========
