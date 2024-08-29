@@ -1,0 +1,19 @@
+{
+  "base": {
+    "logo": "",
+    "project": "jenkins_example",
+    "environment": "test",
+    "comment": "@kd0ublej",
+    "reportLink": "http://localhost:8080",
+    "language": "ru",
+    "allureFolder": "allure-report/",
+    "enableChart": true,
+    "enableSuitesPublishing": true
+  },
+  "telegram": {
+    "token": "7209026814:AAFOR2EnBJvIs4v2abEWyGEumNlz054wsG0",
+    "chat": "-1002234091045",
+    "replyTo": "",
+    "templatePath": "/templates/telegram.ftl"
+  }
+}
