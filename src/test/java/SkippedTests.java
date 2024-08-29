@@ -9,6 +9,7 @@ import tests.TestBase;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Tag("skipped")
+@Tag("example")
 public class SkippedTests {
 
     @Test

@@ -72,6 +72,12 @@ tasks.register('skipped_test', Test) {
     }
 }
 
+tasks.register('example_test', Test) {
+    useJUnitPlatform {
+        includeTags("example")
+    }
+}
+
 
 
 

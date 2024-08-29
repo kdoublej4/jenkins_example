@@ -8,6 +8,7 @@ import tests.TestBase;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @Tag("negative")
+@Tag("example")
 public class NegativeTests {
 
     @Test
