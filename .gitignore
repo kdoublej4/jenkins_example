@@ -73,10 +73,6 @@ cmake-build-*/
 # Mongo Explorer plugin
 .idea/**/mongoSettings.xml
 
-# File-based project format
-
-# IntelliJ
-
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
@@ -213,3 +209,7 @@ gradle-app.setting
 ### Gradle Patch ###
 # Java heap dump
 *.hprof
+
+### Other ###
+notifications/draft.txt
+notifications/config.json
